@@ -5,11 +5,75 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
+        <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
         <title>Mariana Pereira</title>
     </head>
     <body>
 
-        <header></header>
+        <header class="container-fluid p-0">
+            <div class="row no-gutters my-4">
+                <div class="col-1 d-md-none"> <!-- Toggled navbar -->
+                    <nav class="navbar navbar-expand-md">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-small" aria-controls="nav-small" aria-expanded="false" aria-label="Toggle navigation">
+                            <span><i class="fas fa-bars"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="nav-small">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <h5 class="heading">About me</h5>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="heading">Education</h5>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="heading">Portfolio</h5>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="heading">Skills</h5>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-6 col-md-4 offset-md-4 text-md-center"> <!-- Logo -->
+                    <h1 class="logo">Mariana</h1>
+                </div>
+                <div class="col-5 col-md-4 text-right text-md-center"> <!-- Social media links -->
+                    <ul class="list-inline list-unstyled pr-2 pr-md-0 mb-0">
+                        <li class="list-inline-item">E</li>
+                        <li class="list-inline-item">L</li>
+                        <li class="list-inline-item">G</li>
+                        <li class="list-inline-item">I</li>
+                        <li class="list-inline-item">F</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row no-gutters d-none d-md-block mb-4"> <!-- Navbar on bigger screens -->
+                <div class="col-10 text-center mx-auto">
+                    <nav class="navbar navbar-expand-md">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-big" aria-controls="nav-big" aria-expanded="false" aria-label="Toggle navigation">
+                            <span><i class="fas fa-bars"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="nav-big">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item mr-4">
+                                    <h4 class="heading">About me</h4>
+                                </li>
+                                <li class="nav-item mr-4">
+                                    <h4 class="heading">Education</h4>
+                                </li>
+                                <li class="nav-item mr-4">
+                                    <h4 class="heading">Portfolio</h4>
+                                </li>
+                                <li class="nav-item">
+                                    <h4 class="heading">Skills</h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
 
         <div class="container-fluid"></div>
 

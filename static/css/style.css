@@ -17,3 +17,47 @@
 body {
     font-family: 'Lora', serif;
 }
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Icons */
+
+.my-icon {
+    font-size: 1.5rem !important;
+}
+
+/* Other */
+
+.main-content {
+    padding-top: 172px;
+}
+
+/* Media Queries */
+
+@media (max-width: 767px){
+    .logo {
+        font-size: 2rem !important;
+    }
+
+    .main-content {
+        padding-top: 86px;
+    }
+}
+
+@media (max-width: 500px){
+    .logo {
+        font-size: 1.5rem !important;
+    }
+
+    .my-icon {
+        font-size: 1rem !important;
+    }
+
+    .main-content {
+        padding-top: 78px;
+    }
+}

@@ -39,6 +39,10 @@ a:hover {
 
 /* Other */
 
+header {
+    background-color: white;
+}
+
 .main-content {
     padding-top: 172px;
 }

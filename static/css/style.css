@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@300;500&display=swap');
 
+body {
+    position: relative;
+}
+
 /* Font styles */
 
 .logo {

@@ -109,21 +109,24 @@
                         </div>
                     </div>
                     <div class="row no-gutters mb-4 justify-content-center section-content">
-                        <div class="col-4">
-                            <h6 class="heading text-center mb-3">Architecture & Design</h6>
-                            <ul>
-                                <li>AutoCad</li>
-                                <li>ArchiCad</li>
-                                <li>SketchUp</li>
-                                <li>V-Ray</li>
-                                <li>Adobe Photoshop</li>
-                                <li>Adobe InDesign</li>
-                                <li>Adobe Illustrator</li>
+                        <div class="col-4 col-md-2 pr-4">
+                            <button class="p-0 mb-2 skill-btn personal"><h6 class="mb-0 heading text-center">Personal</h6></button>
+                            <button class="p-0 mb-2 skill-btn programming"><h6 class="mb-0 heading text-center">Programming</h6></button>
+                            <button class="p-0 mb-2 skill-btn design"><h6 class="mb-0 heading text-center">Design</h6></button>
+                            <button class="p-0 mb-2 skill-btn architecture"><h6 class="mb-0 heading text-center">Architecture</h6></button>
+                        </div>
+                        <div class="col-8 col-md-4" id="personal">
+                            <ul class="list-unstyled">
+                                <li>Creativity</li>
+                                <li>Teamwork</li>
+                                <li>Perseverance</li>
+                                <li>Dedication</li>
+                                <li>Not afraid of taking chances</li>
+                                <li>Ability to accept constructive criticism</li>
                             </ul>
                         </div>
-                        <div class="col-4">
-                            <h6 class="heading text-center mb-3">Programming</h6>
-                            <ul>
+                        <div class="col-8 col-md-4 hidden" id="programming">
+                            <ul class="list-unstyled">
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JavaScript</li>
@@ -139,15 +142,19 @@
                                 <li>Version Control - Git</li>
                             </ul>
                         </div>
-                        <div class="col-4">
-                            <h6 class="heading text-center mb-3">Personal</h6>
-                            <ul>
-                                <li>Creativity</li>
-                                <li>Teamwork</li>
-                                <li>Perseverance</li>
-                                <li>Dedication</li>
-                                <li>Not afraid of taking chances</li>
-                                <li>Ability to accept constructive criticism</li>
+                        <div class="col-8 col-md-4 hidden" id="design">
+                            <ul class="list-unstyled">
+                                <li>Adobe Photoshop</li>
+                                <li>Adobe InDesign</li>
+                                <li>Adobe Illustrator</li>
+                            </ul>
+                        </div>
+                        <div class="col-8 col-md-4 hidden" id="architecture">
+                            <ul class="list-unstyled">
+                                <li>AutoCad</li>
+                                <li>ArchiCad</li>
+                                <li>SketchUp</li>
+                                <li>V-Ray</li>
                             </ul>
                         </div>
                     </div>
@@ -164,6 +171,34 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".personal").click(function(){
+                    $("#personal").removeClass('hidden');
+                    $("#programming").addClass('hidden');
+                    $("#design").addClass('hidden');
+                    $("#architecture").addClass('hidden');
+                });
+                $(".programming").click(function(){
+                    $("#programming").removeClass('hidden');
+                    $("#personal").addClass('hidden');
+                    $("#design").addClass('hidden');
+                    $("#architecture").addClass('hidden');
+                });
+                $(".design").click(function(){
+                    $("#design").removeClass('hidden');
+                    $("#personal").addClass('hidden');
+                    $("#programming").addClass('hidden');
+                    $("#architecture").addClass('hidden');
+                });
+                $(".architecture").click(function(){
+                    $("#architecture").removeClass('hidden');
+                    $("#personal").addClass('hidden');
+                    $("#programming").addClass('hidden');
+                    $("#design").addClass('hidden');
+                });
+            });
+        </script>
 
     </body>
 </html>

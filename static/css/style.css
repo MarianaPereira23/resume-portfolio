@@ -37,6 +37,17 @@ a:hover {
     object-fit: cover;
 }
 
+/* Buttons */
+
+.skill-btn {
+    border: none;
+    background-color: white;
+}
+
+.skill-btn:hover {
+    text-decoration: underline;
+}
+
 /* Other */
 
 header {
@@ -61,6 +72,10 @@ header {
     position: absolute;
     top: 50%;
     right: 3%;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Media Queries */

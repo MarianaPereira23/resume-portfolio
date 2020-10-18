@@ -54,13 +54,13 @@ header {
 .center-left {
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 3%;
 }
 
 .center-right {
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: 3%;
 }
 
 /* Media Queries */
@@ -72,6 +72,10 @@ header {
 
     .main-content {
         padding-top: 86px;
+    }
+
+    .job-title {
+        font-size: 1.5rem !important;
     }
 }
 
@@ -86,5 +90,9 @@ header {
 
     .main-content {
         padding-top: 78px;
+    }
+
+    .job-title {
+        font-size: 1rem !important;
     }
 }

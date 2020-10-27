@@ -82,6 +82,10 @@ header {
     display: none;
 }
 
+.history {
+    border-left: 1px solid #000000;
+}
+
 /* Media Queries */
 
 @media (max-width: 767px){

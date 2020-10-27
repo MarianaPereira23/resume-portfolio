@@ -82,8 +82,20 @@ header {
     display: none;
 }
 
-.history {
+.timeline-item {
     border-left: 1px solid #000000;
+}
+
+.timeline-item:before {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    position: absolute;
+    left: -4px !important;
+    border-radius: 50%;
+    content: '';
+    z-index: 500;
+    background-color: #000000;
 }
 
 /* Media Queries */

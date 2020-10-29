@@ -41,6 +41,11 @@ a:hover {
     object-fit: cover;
 }
 
+.project-photo {
+    width: 100%;
+    object-fit: cover;
+}
+
 /* Buttons */
 
 .skill-btn {
@@ -96,6 +101,10 @@ header {
     content: '';
     z-index: 500;
     background-color: #000000;
+}
+
+.border-line {
+    border-right: 1px solid #000000;
 }
 
 /* Media Queries */

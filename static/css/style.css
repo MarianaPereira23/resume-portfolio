@@ -63,6 +63,10 @@ header {
     background-color: white;
 }
 
+#nav-small {
+    width: 100vw !important;
+}
+
 .main-content {
     padding-top: 172px;
 }
@@ -96,7 +100,7 @@ header {
     height: 8px;
     display: inline-block;
     position: absolute;
-    left: 12px !important;
+    left: -3px !important;
     border-radius: 50%;
     content: '';
     z-index: 500;
@@ -138,5 +142,8 @@ header {
 
     .job-title {
         font-size: 1rem !important;
+    }
+    h6 {
+        font-size: 12px;
     }
 }

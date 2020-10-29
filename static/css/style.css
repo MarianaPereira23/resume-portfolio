@@ -91,7 +91,7 @@ header {
     height: 8px;
     display: inline-block;
     position: absolute;
-    left: 1rem !important;
+    left: 12px !important;
     border-radius: 50%;
     content: '';
     z-index: 500;

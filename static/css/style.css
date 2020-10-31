@@ -37,7 +37,8 @@ a:hover {
 /* Images */
 
 .my-photo {
-    width: 60%;
+    width: 70%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -137,7 +138,7 @@ header {
     }
 
     .main-content {
-        padding-top: 78px;
+        padding-top: 78px !important;
     }
 
     .job-title {

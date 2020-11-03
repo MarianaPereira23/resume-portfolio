@@ -112,6 +112,12 @@ header {
     border-right: 1px solid #000000;
 }
 
+.vertical {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
 /* Media Queries */
 
 @media (max-width: 767px){

@@ -88,6 +88,10 @@ header {
     right: 3%;
 }
 
+.active {
+    text-decoration: underline;
+}
+
 .hidden {
     display: none;
 }
